@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journ’All - all é tudo</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        nav {
+            display: flex;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .site-title {
+            text-align: center;
+            margin-top: 80px; /* Aumentado para descer o título */
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .site-subtitle {
+            text-align: center;
+            font-size: 16px; /* Tamanho menor para o subtítulo */
+            color: #666;
+            margin-top: 5px;
+        }
+        .container {
+            margin-top: 120px; /* Ajustado para dar espaço ao título e subtítulo */
+            padding: 20px;
+        }
+        .highlights {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .highlight-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: calc(30% - 20px);
+            margin-bottom: 20px;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .columnists {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .columnist {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 20px;
+        }
+        .columnist img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .columnist-name {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .columnist-description {
+            text-align: center;
+            margin-top: 5px;
+            font-size: 14px;
+            color: #666;
+        }
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .category-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: calc(30% - 20px);
+            margin-bottom: 20px;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            .highlight-card, .category-card {
+                width: calc(100% - 20px);
+            }
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                margin: 5px 0;
+            }
+            .columnist {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Journ’All</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#colunas">Colunas</a>
+        <a href="#futebol-sociedade">Futebol & Sociedade</a>
+        <a href="#atualidades">Atualidades</a>
+        <a href="#cultura-comportamento">Cultura & Comportamento</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+<div class="site-title">Journ’All</div>
+<div class="site-subtitle">all é tudo</div>
+
+<div class="container" id="home">
+    <h2>Destaques</h2>
+    <div class="highlights">
+        <div class="highlight-card">
+            <h3>Título da Matéria 1</h3>
+            <p>Descrição breve da matéria 1.</p>
+        </div>
+        <div class="highlight-card">
+            <h3>Título da Matéria 2</h3>
+            <p>Descrição breve da matéria 2.</p>
+        </div>
+        <div class="highlight-card">
+            <h3>Título da Matéria 3</h3>
+            <p>Descrição breve da matéria 3.</p>
+        </div>
+    </div>
+
+    <h2>Colunistas</h2>
+    <div class="columnists">
+        <div class="columnist">
+            <img src="https://via.placeholder.com/80" alt="Colunista 1">
+            <div class="columnist-name">Colunista 1</div>
+            <div class="columnist-description">Breve descrição do colunista 1.</div>
+        </div>
+        <div class="columnist">
+            <img src="https://via.placeholder.com/80" alt="Colunista 2">
+            <div class="columnist-name">Colunista 2</div>
+            <div class="columnist-description">Breve descrição do colunista 2.</div>
+        </div>
+        <div class="columnist">
+            <img src="https://via.placeholder.com/80" alt="Colunista 3">
+            <div class="columnist-name">Colunista 3</div>
+            <div class="columnist-description">Breve descrição do colunista 3.</div>
+        </div>
+        <div class="columnist">
+            <img src="https://via.placeholder.com/80" alt="Colunista 4">
+            <div class="columnist-name">Colunista 4</div>
+            <div class="columnist-description">Breve descrição do colunista 4.</div>
+        </div>
+    </div>
+
+    <h2>Categorias</h2>
+    <div class="categories">
+        <div class="category-card">
+            <h3>Colunas</h3>
+            <p>Textos de diferentes autores.</p>
+        </div>
+        <div class="category-card">
+            <h3>Futebol & Sociedade</h3>
+            <p>Artigos que conectam futebol com política.</p>
+        </div>
+        <div class="category-card">
+            <h3>Atualidades</h3>
+            <p>Notícias recentes com opinião.</p>
+        </div>
+        <div class="category-card">
+            <h3>Cultura & Comportamento</h3>
+            <p>Textos sobre arte, música e filosofia.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Journ’All. Todos os direitos reservados.</p>
+</footer>
+
+<script>
+    // JavaScript para interações simples
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            const targetId = this.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+</script>
+
+</body>
+</html>
